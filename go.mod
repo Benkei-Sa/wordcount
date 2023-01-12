@@ -1,3 +1,3 @@
 module github.com/Benkei-Sa/wordcount
 
-go 1.18
+go 1.16
