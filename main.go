@@ -7,12 +7,12 @@ import (
 )
 
 func main() {
-	if len(os.Args) != 1 {
-		str := os.Args[1]
-		mas_str := strings.Split(str, " ")
-		fmt.Println(len(mas_str))
-	} else {
-		fmt.Println("0")
-	}
 
+	str := os.Args
+	if len(str) == 1 || os.Args[1] == "" {
+		fmt.Println(0)
+	} else {
+		mas_str := strings.Split(str[1], " ")
+		fmt.Println(len(mas_str))
+	}
 }
